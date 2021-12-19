@@ -1,7 +1,5 @@
-import pyfiglet
 import os
 import json
-import sys
 
 # Get Current Execution Path
 currentPath =str(__file__.replace("main.py", ""))
@@ -9,7 +7,14 @@ currentPath =str(__file__.replace("main.py", ""))
 files = [file for file in os.listdir() if file.endswith(".txt")]
 
 # Main Tool Title "VULNHUNT"
-print(pyfiglet.figlet_format("VULNHUNT", font="alligator"))
+print("""
+ __     ___   _ _     _   _ _   _ _   _ _   _ _____ 
+ \ \   / / | | | |   | \ | | | | | | | | \ | |_   _|
+  \ \ / /| | | | |   |  \| | |_| | | | |  \| | | |  
+   \ V / | |_| | |___| |\  |  _  | |_| | |\  | | |  
+    \_/   \___/|_____|_| \_|_| |_|\___/|_| \_| |_|  
+                                                    
+""")
 
 # while loop depends on chosen VUL if no chosen (VUL = "none") it will keep asking to choose a VUL
 VUL = "none" # VUL Variable
